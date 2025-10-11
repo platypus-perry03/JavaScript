@@ -1,31 +1,42 @@
 body {
     background-color: black;
-    display: inline-block;
-    text-align: center;
-    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* 가로 가운데 */
+    align-items: center;     /* 세로 가운데 */
+    height: 100vh;           /* 화면 전체 높이 사용 */
+    margin: 0;               /* 기본 여백 제거 */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
 }
 
 .panel {
     width: 200px;
     height: 200px;
-    display: inline-block;
 }
 
-.bottom-right-panel {
-    background-color: red;
-    border-bottom-right-radius: 100%;
-}
-.bottom-left-panel {
-    background-color: green;
-    border-bottom-left-radius: 100%;
+.top-left-panel {
+    background-color: purple;
+    border-top-left-radius: 100%;
 }
 .top-right-panel {
     background-color: blue;
     border-top-right-radius: 100%;
 }
-.top-left-panel {
-    background-color: purple;
-    border-top-left-radius: 100%;
+.bottom-left-panel {
+    background-color: green;
+    border-bottom-left-radius: 100%;
+}
+.bottom-right-panel {
+    background-color: red;
+    border-bottom-right-radius: 100%;
 }
 
 .center {
@@ -33,18 +44,5 @@ body {
     height: 100px;
     border-radius: 100%;
     background-color: gray;
+    position: absolute; /* 중앙 원을 큰 원 중앙에 겹치게 */
 }
-
-.red {
-    background-color: red;
-}
-.green {
-    background-color: green;
-}
-.blue {
-    background-color: blue;
-}
-.purple {
-    background-color: purple;
-}
-
