@@ -1,1 +1,5 @@
-.panel
+.panel {
+    background-color: red;
+    border-bottom-left-radius: 200px;
+    
+}
