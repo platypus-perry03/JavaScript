@@ -5,19 +5,19 @@
     height: 100px;
 }
 .bottom-left-panel {
-    background-color: red;
+    background-color: green;
     border-bottom-left-radius: 200px;
     width: 100px;
     height: 100px;
 }
 .top-right-panel {
-    background-color: red;
+    background-color: blue;
     border-top-right-radius: 200px;
     width: 100px;
     height: 100px;
 }
 .top-left-panel {
-    background-color: red;
+    background-color: purple;
     border-top-left-radius: 200px;
     width: 100px;
     height: 100px;
@@ -32,6 +32,6 @@
 .blue {
     background-color: red;
 }
-.puple {
+.purple {
     background-color: red;
 }
