@@ -1,3 +1,21 @@
+.bottom-right-panel {
+    background-color: red;
+    border-bottom-left-radius: 200px;
+    width: 100px;
+    height: 100px;
+}
+.panel {
+    background-color: red;
+    border-bottom-left-radius: 200px;
+    width: 100px;
+    height: 100px;
+}
+.panel {
+    background-color: red;
+    border-bottom-left-radius: 200px;
+    width: 100px;
+    height: 100px;
+}
 .panel {
     background-color: red;
     border-bottom-left-radius: 200px;
@@ -8,15 +26,12 @@
 .red {
     background-color: red;
 }
-
 .green {
     background-color: red;
 }
-
 .blue {
     background-color: red;
 }
-
 .puple {
     background-color: red;
 }
