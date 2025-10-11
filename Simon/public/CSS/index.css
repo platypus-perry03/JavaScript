@@ -1,7 +1,7 @@
 .panel {
     width: 100px;
     height: 100px;
-    display block
+    display ;
 }
 
 .bottom-right-panel {
