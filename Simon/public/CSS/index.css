@@ -1,12 +1,12 @@
 body {
     background-color: black;
+    display: inline-block;
 }
 
 .panel {
     width: 200px;
     height: 200px;
     display: inline-block;
-    text-align: center;
 }
 
 .bottom-right-panel {
