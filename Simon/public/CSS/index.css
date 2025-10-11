@@ -1,24 +1,24 @@
 .bottom-right-panel {
     background-color: red;
-    border-bottom-left-radius: 200px;
-    width: 100px;
-    height: 100px;
-}
-.bottom-right-panel {
-    background-color: red;
-    border-bottom-left-radius: 200px;
-    width: 100px;
-    height: 100px;
-}
-.bottom-right-panel {
-    background-color: red;
-    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
     width: 100px;
     height: 100px;
 }
 .bottom-left-panel {
     background-color: red;
     border-bottom-left-radius: 200px;
+    width: 100px;
+    height: 100px;
+}
+.top-right-panel {
+    background-color: red;
+    border-top-right-radius: 200px;
+    width: 100px;
+    height: 100px;
+}
+.top-left-panel {
+    background-color: red;
+    border-top-left-radius: 200px;
     width: 100px;
     height: 100px;
 }
