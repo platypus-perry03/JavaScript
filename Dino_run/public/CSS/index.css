@@ -34,3 +34,4 @@ body{
     background: url('../images/ground.png') repeat-x 0 0/auto 40px;
     animation: groundScroll 2s linear infinite;
 }
+@keyframes groundScroll{ from(transform: translateX(0)} to{transform: translateX(-50%)})}
