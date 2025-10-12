@@ -11,6 +11,13 @@ body{
     min-height: 100vh; padding-top: 24px; font-family: system-ui, Arial, sans-serif;
 }
 
+#hud{
+    width: var(--game-w);
+    display: flex; justify-content: flex-end; gap: 24px;
+    color: #444; font-weight: 700; letter-spacing: 2px;
+    user-select: none; -webkit-user-select: none;
+}
+
 #game{
   width:500px; height:200px;
   border:1px solid black;
