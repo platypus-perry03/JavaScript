@@ -31,5 +31,5 @@ body{
 #ground{
     position: absolute; left: 0; top: var(--floor-y);
     width: 200%; height: 40px;
-    background: url
+    background: url('../')
 }
