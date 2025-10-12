@@ -19,10 +19,12 @@ body{
 }
 
 #game{
-  width:500px; height:200px;
-  border:1px solid black;
-  position:relative; /* 충돌·레이아웃 안정화 */
-  overflow:hidden;   /* 블록이 밖으로 나가도 스크롤 막기 */
+  position: relative;
+  width: var(--game-w);
+  height: var(--game-h);
+  border: 1px solid #bbb;
+  background: #fff;
+  overflow: hidden;
 }
 
 #character{
@@ -33,28 +35,3 @@ body{
   top:150px;           /* 바닥 높이 */
 }
 
-/* 점프할 때 붙는 클래스 */
-#character.animate{
-  animation: jump 0.5s ease-out;
-}
-
-@keyframes jump{
-  0%   { top:150px; }
-  30%  { top:100px; }  /* 점프 최고점 */
-  70%  { top:100px; }
-  100% { top:150px; }
-}
-
-#block{
-  width:20px; height:20px;
-  background:#36f;
-  position:absolute;
-  top:180px;      /* 바닥 라인보다 살짝 위 */
-  left:480px;
-  animation: block 1s linear infinite; /* ← 1s(숫자1) */
-}
-
-@keyframes block{
-  0%   { left:480px; }
-  100% { left:-40px; }
-}
