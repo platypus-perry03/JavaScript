@@ -15,7 +15,7 @@ let state = GAME.READY;
 let y = 0;                  // 캐릭터 높이 (바닥 기준)
 let vy = 0;                 // 속도
 const GRAVITY = -0.0032;    // 중력
-const JUMP_V = 0.08;        // 점프
+const JUMP_V = 0.1;        // 점프
 let last = 0
 
 let blockX = 0;
