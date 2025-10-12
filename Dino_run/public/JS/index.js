@@ -39,6 +39,8 @@ document.addEventListener("keydown", e=> {
     if (e.code === "Space" || e.code === "ArrowUp") headleInput();
 });
 
+document.addEventListener("click", headleInput);
+
 // 시작/재시작
 function start() {
     state = GAME.PLAYING;
