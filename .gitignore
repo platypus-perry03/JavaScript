@@ -1,5 +1,22 @@
-﻿node_modules/
-.env
+﻿# 공통
 .DS_Store
+Thumbs.db
+.env
+.env.*
+*.log
+logs/
+npm-debug.log*
+yarn-*.log
+pnpm-debug.log*
+
+# 빌드 산출물
 dist/
 build/
+coverage/
+
+# 모든 node_modules
+node_modules/
+
+# Dino_run 하위(안전하게 중복 지정)
+Dino_run/node_modules/
+Dino_run/express/node_modules/
