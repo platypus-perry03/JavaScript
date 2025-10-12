@@ -27,11 +27,9 @@ body{
   overflow: hidden;
 }
 
-#character{
-  width:20px; height:50px;
-  background:#f33;
-  position:absolute;
-  left:50px;           /* 살짝 왼쪽에 고정 */
-  top:150px;           /* 바닥 높이 */
+/* 바닥과 구름: 배경 스크롤 느낌 */
+#ground{
+    position: absolute; left: 0; top: var(--floor-y);
+    width: 200%; height: 40px;
+    background: url
 }
-
