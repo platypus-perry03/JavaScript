@@ -99,3 +99,26 @@ function loop(t) {
 
     requestAnimationFrame(loop);
 }
+
+// 종료
+function gameOver() {
+    state = GAME.OVER;
+    ground.style.animationPlayState = "paused";
+    clouds.style.animationPlayState = "paused";
+    game.classList.add("flash");
+    hi = Math.max(hi, Math.floor(score));
+    localStorage.setItem("dino_hi", hi.toString());
+    updateOverlay(true, "GAME OVER", "CLICK / SPACE To RESTART");
+    updateScore(score, hi);
+}
+
+// 장애물
+function placeBlockOffscreen() {
+    blockX = parseInt(getComputedStyle(game).width, 10) + rand(40, 120);
+    block.style.left = `${blockX}px`;
+}
+function spawnBlock() {
+    if (state !== GAME.PLAYING) return;
+    passed = false;
+    placeBlockOffscreen();
+}
