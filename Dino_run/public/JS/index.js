@@ -3,5 +3,8 @@ var block = document.getElementById("block");
 
 function jump() {
     charater. classList.add("animate");
-    setTimeout(function() {}, 500);
+    setTimeout(function() {
+        
+        CharacterData.classList.remove("animate");
+    }, 500);
 }
