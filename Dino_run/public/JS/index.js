@@ -17,3 +17,14 @@ let vy = 0;                 // 속도
 const GRAVITY = -0.0032;    // 중력
 const JUMP_V = 0.08;        // 점프
 let last = 0
+
+let blockX = 0;
+let speed = 0.22;
+let passed = false;
+let score = 0;
+let hi = parseInt(localStorage.getItem("dino_hi") || "0", 10);
+
+// 초기
+updateScore(0, hi);
+placeBlockOffscreen();
+updateOverlay(true, "CLICK / SPACE TO START", "JUMP: CLICK / SPACE / ")
