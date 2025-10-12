@@ -27,4 +27,15 @@ let hi = parseInt(localStorage.getItem("dino_hi") || "0", 10);
 // 초기
 updateScore(0, hi);
 placeBlockOffscreen();
-updateOverlay(true, "CLICK / SPACE TO START", "JUMP: CLICK / SPACE / ")
+updateOverlay(true, "CLICK / SPACE TO START", "JUMP: CLICK / SPACE / ↑");
+
+// 입력
+function headleInput() {
+    if (state === GAME.READY) startTransition();
+    else if (state === GAME.PLAYING) JUMP_V();
+    else if (state === GAME.OVER) restart();
+}
+document.addEventListener("keydown", e=> {
+    if (e.code === "Space" || e.code === "ArrowUp") headleInput();
+});
+
