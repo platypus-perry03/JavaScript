@@ -9,3 +9,8 @@ function jump() {
         CharacterData.classList.remove("animate");
     }, 500);
 }
+
+var checkDead = setInterval(funtion() {
+    var characterTop = parseInt(window.getComputedStyle(character).
+    getPropertyValue("top"));
+}, 10);
