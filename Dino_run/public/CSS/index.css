@@ -35,3 +35,11 @@ body{
     animation: groundScroll 2s linear infinite;
 }
 @keyframes groundScroll{ from{transform: translateX(0)} to{transform: translateX(-50%)}}
+
+#clouds{
+    position:absolute; left: 0; top: 20px; width: 200%; height: 60px;
+    background: url('../images/cloud.png') repeat-x 0 0/50px 18px; opacity: .6;
+    animation: cloudScroll 12s linear infinite;
+}
+@keyframes cloudScroll{ from{transform: translatex(0)} to{transform: translateX(-50%)}}
+
