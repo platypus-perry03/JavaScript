@@ -22,8 +22,8 @@
 
 @keyframes jump{
   0%   { top:150px; }
-  40%  { top:80px; }  /* 점프 최고점 */
-  60%  { top:80px; }
+  30%  { top:100px; }  /* 점프 최고점 */
+  70%  { top:100px; }
   100% { top:150px; }
 }
 
