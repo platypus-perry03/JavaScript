@@ -69,7 +69,7 @@ function loop(t) {
     // 물리
     vy += GRAVITY * dt;
     y += vy * dt;
-    if (v < 0){ y = 0; vy = 0; }
+    if (y < 0){ y = 0; vy = 0; }
 
     // 위치 반영
     const floorY = 160;
@@ -90,7 +90,7 @@ function loop(t) {
     }
 
     // 충돌
-    const hit = collid(
+    const hit = collide(
         {x : charX, y : charTop, w: 40, h: 44},
         {x: blockX, y: floorY - 46, w: 26, h: 46},
     );
