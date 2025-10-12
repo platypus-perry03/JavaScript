@@ -22,7 +22,7 @@
     position: relative;
     top: 130px;
     left: 480px;
-    animation: block ls infinite;
+    animation: block ls infinite linear;
 }
 @keyframes block{
     0%{left:480px;}
