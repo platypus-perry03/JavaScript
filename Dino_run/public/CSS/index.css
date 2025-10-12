@@ -14,6 +14,7 @@
     background-color: red;
     position: relative;
     top: 150px;
+    animation: jumb 500ms infinite;
 }
 @keyframes jump{
     0%{top: 150px;}
