@@ -122,3 +122,17 @@ function spawnBlock() {
     passed = false;
     placeBlockOffscreen();
 }
+
+// 점수
+function addScore(delta) { score += delta; updateScore(score, hi); }
+function updateScore(cur, hiVal) {
+    const s = Math.floor(cur).toString().padStart(5, '0');
+    const h = Math.floor(hiVal).toString().padStart(5, '0');
+    scoreEl.textContent = s;
+    hiEl.textContent = `HI ${h}`;
+}
+
+// 유틸
+function collide(a, b) {
+    return !(a.x + a.w < b.x || b.x + b.w < a.x || a.y + a.h < b.y || b.y +)
+}
