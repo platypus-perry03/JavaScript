@@ -31,7 +31,7 @@ updateOverlay(true, "CLICK / SPACE TO START", "JUMP: CLICK / SPACE / ↑");
 
 // 입력
 function headleInput() {
-    if (state === GAME.READY) startTransition();
+    if (state === GAME.READY) start();
     else if (state === GAME.PLAYING) JUMP_V();
     else if (state === GAME.OVER) restart();
 }
