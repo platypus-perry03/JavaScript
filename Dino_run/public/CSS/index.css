@@ -31,5 +31,6 @@ body{
 #ground{
     position: absolute; left: 0; top: var(--floor-y);
     width: 200%; height: 40px;
-    background: url('../')
+    background: url('../images/ground.png') repeat-x 0 0/auto 40px;
+    animation: groundScroll 2s linear infinite;
 }
