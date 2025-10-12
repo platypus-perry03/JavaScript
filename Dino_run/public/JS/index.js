@@ -134,5 +134,11 @@ function updateScore(cur, hiVal) {
 
 // 유틸
 function collide(a, b) {
-    return !(a.x + a.w < b.x || b.x + b.w < a.x || a.y + a.h < b.y || b.y +)
+    return !(a.x + a.w < b.x || b.x + b.w < a.x || a.y + a.h < b.y || b.y + b.h < a.y);
 }
+function updateOverlay(show, title, sub){
+    overlay.style.display = show ? "flex" : "none";
+    if (title) document.getElementById("title").textContent = title;
+    if (sub) document.getElementById("subtitle").textContent = sub;
+}
+function rand(min, max){ return Math.floor(Math.random() * (max - min + 1)) + min; }
